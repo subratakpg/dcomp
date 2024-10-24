@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Division Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Slick Carousel -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 800,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <img src="../images/OfficeMungpoo.jpg" alt="Office Image" class="fade-in">
+        </div>
+    </header>
+
+    <!-- Google Map and Office Info Section -->
+    <section class="office-info">
+        <div class="map-preview">
+            <h2>Office Location</h2>
+            <div class="map-placeholder">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455141.60662335966!2d87.79354617343748!3d26.97342840000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e43b2d03c5f105%3A0x28f398b5385e8ecf!2sCinchona%20plantation%20Manager&#39;s%20office!5e0!3m2!1sen!2sin!4v1729706161765!5m2!1sen!2sin"
+                    width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="office-details">
+            <br><br>
+            <h1 class="underline-title">Mungpoo Division</h1>
+            <p>Office Address: Random Address</p>
+            <p>Contact Number: +911234567890</p>
+            <p>Email: mgrmungpoo@dcomp.in</p>
+        </div>
+    </section>
+
+     <!-- Crop List and Employee Section -->
+     <section class="details-section">
+        <div class="crop-list">
+            <h3>Crop List:</h3>
+            <ul>
+                <li>Cinchona: 5 ha</li>
+                <li>Orange: 1 acre</li>
+                <li>Chirata: 3 acre</li>
+            </ul>
+        </div>
+        <div class="employee-strength">
+            <h3>Employee Strength:</h3>
+            <ul>
+                <li>Manager - 1</li>
+                <li>Division Officer - 1</li>
+                <li>Gangman - 5</li>
+                <li>Worker - 150</li>
+            </ul>
+        </div>
+    </section>
+<hr>
+<br>
+    <!-- Physical Resources Section -->
+    <section class="resources" style="margin-left: 240px;">
+        <h3>Physical Resources:</h3>
+        <ul>
+            <li>Area: 25 ha</li>
+            <li>Building: 3</li>
+            <li>Staff Quarter: 25</li>
+            <li>Jhora: 4</li>
+        </ul><br>
+    </section>
+<!-- Activity Gallery Section -->
+<section class="activity-gallery">
+    <h2>Our Activities</h2>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 1">
+                <p>Activity 1: Plantation Drive</p>
+            </div>
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 2">
+                <p>Activity 2: Community Outreach</p>
+            </div>
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 3">
+                <p>Activity 3: Training Workshop</p>
+            </div>
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 4">
+                <p>Activity 4: Field Visit</p>
+            </div>
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 5">
+                <p>Activity 5: Awareness Campaign</p>
+            </div>
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 5">
+                <p>Activity 5: Awareness Campaign</p>
+            </div>
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 5">
+                <p>Activity 5: Awareness Campaign</p>
+            </div>
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 5">
+                <p>Activity 5: Awareness Campaign</p>
+            </div>
+            <div class="activity-slide">
+                <img src="https://via.placeholder.com/300x200" alt="Activity 5">
+                <p>Activity 5: Awareness Campaign</p>
+            </div>
+                                                
+        </div>
+    </div>
+</section>
+<div class="button-container">
+    <a href="/"><button class="go-back-button" id="go-back-button">Go Back</button></a>
+</div> <br><br>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Mungpoo Division. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
